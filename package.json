@@ -4,7 +4,7 @@
   "description": "Project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cucumber-js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/DavidHJE/ci-cd-project/issues"
   },
-  "homepage": "https://github.com/DavidHJE/ci-cd-project#readme"
+  "homepage": "https://github.com/DavidHJE/ci-cd-project#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.3.2"
+  }
 }
