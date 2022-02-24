@@ -5,11 +5,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh('mkdir folder && cd folder && touch file')
+                sh("'Bonjour voici un test d'écriture dans le fichier' > file")
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
+                sh('cat file')
             }
         }
         stage('Deploy') {
