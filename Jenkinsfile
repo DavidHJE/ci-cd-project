@@ -1,9 +1,21 @@
-node {
-    stage('Debut') {
-        sh 'echo test debut';
-    }
+pipeline {
+    agent any
 
-    stage('Fin') {
-        sh 'echo test debut';
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
     }
 }
