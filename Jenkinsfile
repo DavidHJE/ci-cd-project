@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh('mkdir folder && cd folder && touch file')
-                sh("'Bonjour voici un test d'écriture dans le fichier' > file")
+                sh("'Bonjour voici un test écriture dans le fichier' > file")
             }
         }
         stage('Test') {
