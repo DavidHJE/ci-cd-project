@@ -19,5 +19,8 @@
   "homepage": "https://github.com/DavidHJE/ci-cd-project#readme",
   "devDependencies": {
     "@cucumber/cucumber": "^7.3.2"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.15"
   }
 }
